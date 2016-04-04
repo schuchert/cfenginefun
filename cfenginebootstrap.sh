@@ -9,3 +9,5 @@ apt-key add /tmp/gpg.key
 apt-get update
 
 apt-get install -y cfengine-community
+
+cp /tmp/cfengine/masterfiles/inputs/promises.cf /var/cfengine/inputs

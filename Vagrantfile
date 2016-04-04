@@ -6,6 +6,8 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision :shell, path: "cfenginebootstrap.sh"
 
+  config.vm.synced_folder "resources/cfengine/", "/tmp/cfengine/"
+
   config.vm.provider "virtualbox" do |vb|
     vb.gui = true
     vb.memory = "4096"
